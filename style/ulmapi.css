@@ -1,0 +1,26 @@
+body{
+	background: #999;
+}
+
+.hero-unit{
+	background: #DDD;
+	text-align:center;
+}
+
+.container{
+	background: #DDD;
+	padding:0px;
+}
+
+.darker {
+	background: #666;
+	color: #EEE;
+}
+
+.darker h2 {
+	color: #DDD;
+}
+
+.darker li{
+	color: #DDD;
+}
