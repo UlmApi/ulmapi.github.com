@@ -2,6 +2,10 @@ body{
 	background: #999;
 }
 
+h2 {
+	margin-bottom:8px;
+}
+
 .hero-unit{
 	background: #FFF;
 	text-align:center;
@@ -19,13 +23,8 @@ body{
 }
 
 li{
-color:#404040;
+	color:#404040;
 }
-
-
-
-
-
 
 .box{width:970px;margin-left:auto;margin-right:auto;zoom:1;;background-color:#fff;height:100%; min-height:100%;box-shadow: 0px 4px 4px 4px #333;}
 .box:before,.box:after{display:table;content:"";zoom:1}
@@ -33,15 +32,7 @@ color:#404040;
 .darkcontainer{width:970px;margin-left:auto;margin-right:auto;zoom:1;;background-color:#CCC; text-align:center;margin-top:10px;margin-bottom:15px;}
 .darkcontainer:before,.darkcontainer:after{display:table;content:"";zoom:1}
 
-.darkcontainer h1{
-	font-family: 'Open Sans', sans-serif;
-	font-variant:small-caps;
-	color:#333;
-	font-size:3em;
-	/* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 10px #999; */
-	padding:5px;
-	margin-top: 6px;
-}
+
 
 .container h1{
 	font-family: 'Open Sans', sans-serif;
@@ -55,4 +46,45 @@ color:#404040;
 
 .date {
 	text-align:center;
+}
+
+.grid {
+	float:left; 
+	margin-right:13px;
+}
+
+.grid-last {
+	float:left; 
+}
+
+.grid img, .grid-last img {
+	border:1px solid #000;
+}
+
+
+.grid img:hover, .grid-last img:hover {
+	border:1px solid #0069D6;
+}
+
+/*
+.grid div, .grid-last div {
+	width: 230px;
+}
+*/
+
+.grid .tags, .grid-last .tags {
+	color:grey;
+	width:220px;
+}
+
+.grid .desc, .grid-last .desc {
+	margin-bottom: 4px;
+	width:220px;
+	height:40px;
+}
+
+.darkcontainer {
+	height:12px;
+	margin-bottom:8px;
+	margin-top:18px;
 }
