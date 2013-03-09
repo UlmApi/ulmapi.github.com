@@ -88,3 +88,8 @@ li{
 	margin-bottom:8px;
 	margin-top:18px;
 }
+
+.grid-separator {
+	clear:both;
+	height:25px;
+}
