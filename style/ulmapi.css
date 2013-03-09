@@ -61,21 +61,8 @@ li{
 	border:1px solid #000;
 }
 
-
 .grid img:hover, .grid-last img:hover {
 	border:1px solid #0069D6;
-}
-
-/*
-.grid div, .grid-last div {
-	width: 230px;
-}
-*/
-
-.grid .tags, .grid-last .tags {
-	color:grey;
-	width:220px;
-	display:none;
 }
 
 .grid .desc, .grid-last .desc {
