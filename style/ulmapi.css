@@ -75,6 +75,7 @@ li{
 .grid .tags, .grid-last .tags {
 	color:grey;
 	width:220px;
+	display:none;
 }
 
 .grid .desc, .grid-last .desc {
