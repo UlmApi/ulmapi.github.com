@@ -92,13 +92,13 @@ layout: default
           {% else %}
             <div class="grid">
           {% endif %}
-                    <a href="{{ post.remote }}">
-                      <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
-                        title="{{ post.title }}" />
-                    </a><br />
+              <a href="{% if %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
+                <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  title="{{ post.title }}" />
+              </a><br />
 
-                    <div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
-                  </div>
+              <div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
+            </div> <!-- END grid/grid-last -->
         {% endfor %}
       </div><!-- END span -->
     </div><!-- END row -->
