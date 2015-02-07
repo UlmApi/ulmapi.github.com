@@ -84,24 +84,27 @@ layout: default
       </div>
     </div> <!-- END CONTAINER -->
 
-		<div class="darkcontainer" style="height:12px;"></div>
-                <div class="container">
+    <div class="darkcontainer" style="height:12px;"></div>
+     <div class="container">
+      <div class="row">
+      <div class="span">
+        {% for post in site.posts limit: 8 %}
+          {% assign loopindex = forloop.index | modulo: 4 %}
+          {% if loopindex == 0 %} 
+                  <div class="grid-last">
+          {% else %}
+                  <div class="grid">
+          {% endif %}
+                    <a href="{{ post.remote }}">
+                      <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                        title="{{ post.title }}" />
+                    </a><br />
 
-
-		<div class="container">
-			<div class="row">
-			<div class="span">
-    {% for post in site.posts %}
-					<div class="grid">
-						<a href="{{ post.remote }}">
-							<img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
-								title="{{ post.title }}" />
-						</a><br />
-
-						<div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
-					</div>
-
-    {% endfor %}
-          </div>
+                    <div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
+                  </div>
+        {% endfor %}
+      </div>
+      </div>
+      </div>
 
 </div>

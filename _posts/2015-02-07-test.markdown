@@ -1,0 +1,10 @@
+---
+layout: post
+remote: "https://www.google.com"
+img: "images/ulmapi.png"
+imgalt: "Alt text for the image"
+title:  "test!"
+date:   2015-02-07 12:57:21
+categories: news
+---
+A
