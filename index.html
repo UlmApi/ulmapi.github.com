@@ -87,7 +87,7 @@ layout: default
       <h2>Aktuelles</h2>
         {% for post in site.posts limit: 8 %}
           {% assign loopindex = forloop.index | modulo: 4 %}
-          {% if loopindex == 0 %} 
+          {% if loopindex == 0 %}
             <div class="grid-last">
           {% else %}
             <div class="grid">
@@ -101,10 +101,11 @@ layout: default
                 {% if post.remote %}
                 {{post.content}}
                 {% else %}
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a> 
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
                 {%endif%}
               </div>
             </div> <!-- END grid/grid-last -->
+            {% if loopindex == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
         {% endfor %}
       </div><!-- END span -->
     </div><!-- END row -->
@@ -120,7 +121,7 @@ layout: default
           {% if post.isproject %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            {% if testli == 0 %} 
+            {% if testli == 0 %}
               <div class="grid-last">
             {% else %}
               <div class="grid">
@@ -129,11 +130,16 @@ layout: default
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
-  
-                <div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
+
+              <div class="desc">
+                {% if post.remote %}
+                {{post.content}}
+                {% else %}
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+                {%endif%}
+              </div>
               </div> <!-- END grid/grid-last -->
-              <!-- -->
-              {% if testli == 0 %} </div></div><div class="row"><div class="span">{%else%}<!-- not the last item in a row--> {% endif %}
+              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
           {% endif %}
         {% endfor %}
       </div><!-- END span -->
@@ -150,7 +156,7 @@ layout: default
         {% if post.isarchive and loopindex < 16 %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            {% if testli == 0 %} 
+            {% if testli == 0 %}
               <div class="grid-last">
             {% else %}
               <div class="grid">
@@ -159,9 +165,16 @@ layout: default
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
-  
-                <div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
+
+              <div class="desc">
+                {% if post.remote %}
+                {{post.content}}
+                {% else %}
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+                {%endif%}
+              </div>
               </div> <!-- END grid/grid-last -->
+              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
           {% endif %}
         {% endfor %}
       </div><!-- END span -->

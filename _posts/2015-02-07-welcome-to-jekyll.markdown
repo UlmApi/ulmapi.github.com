@@ -1,10 +1,9 @@
 ---
 layout: post
-remote: "https://www.jekyllrb.com"
 img: "images/ulmapi.png"
-imgalt: "Alt text for the image"
-title:  "Welcome to Jekyll!"
+imgalt: "UlmAPI Logo"
+title:  "Neue Webseite!"
 date:   2015-02-07 12:53:21
-categories: news
+categories: blog
 ---
-Hallo Welt!
+Wir haben eine neue Webseite! Es seht zwar sehr ähnlich aus, aber kleine Änderungen gibt es jetzt schon: wir haben jetzt die Möglichkeit Blogs wie diese zu schreiben, und sie einfach ein zu bauen. Zusätzlich werden wir unsere Projektübersicht klarer strukturieren und alte Projekte auflisten.
