@@ -9,3 +9,4 @@ To create a new page:
 Copy the file `_drafts/TYPE-template.html` to `_posts` and call it `yyyy-mm-dd-title.ext` (year, month, day, title, extension). Extension is normally html or markdown.
 Fill out the template as described in that file.
 
+For remote pages, note that the content is used as a description. For all other page types, a click-able post title will appear.

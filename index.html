@@ -97,7 +97,13 @@ layout: default
                   title="{{ post.title }}" />
               </a><br />
 
-              <div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
+              <div class="desc">
+                {% if post.remote %}
+                {{post.content}}
+                {% else %}
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a> 
+                {%endif%}
+              </div>
             </div> <!-- END grid/grid-last -->
         {% endfor %}
       </div><!-- END span -->
@@ -126,6 +132,8 @@ layout: default
   
                 <div class="desc"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </div>
               </div> <!-- END grid/grid-last -->
+              <!-- -->
+              {% if testli == 0 %} </div></div><div class="row"><div class="span">{%else%}<!-- not the last item in a row--> {% endif %}
           {% endif %}
         {% endfor %}
       </div><!-- END span -->
