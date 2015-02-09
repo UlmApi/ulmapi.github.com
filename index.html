@@ -100,7 +100,7 @@ layout: default
                     title="{{ post.title }}" />
                 </a><br />
 
-                <div class="desc">
+                <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
                   {% if post.remote %}
                   {{post.content}}
                   {% else %}
@@ -135,7 +135,7 @@ layout: default
                     title="{{ post.title }}" />
                 </a><br />
 
-              <div class="desc">
+              <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
                 {% if post.remote %}
                 {{post.content}}
                 {% else %}
@@ -154,7 +154,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="span">
-        <h2><a name="archiv"></a>Archiv</h2>
+        <h2><a name="archiv"></a><a href="/archive/">Archiv</a></h2>
         {% assign loopindex = 0 %}
         {% for post in site.posts %}
         {% if post.isarchive and loopindex < site.amountofarchive %}
@@ -170,7 +170,7 @@ layout: default
                     title="{{ post.title }}" />
                 </a><br />
 
-              <div class="desc">
+              <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
                 {% if post.remote %}
                 {{post.content}}
                 {% else %}

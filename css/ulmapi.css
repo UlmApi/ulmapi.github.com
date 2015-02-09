@@ -71,6 +71,12 @@ li{
 	height:40px;
 }
 
+.grid .desc-large, .grid-last .desc-large {
+	margin-bottom: 4px;
+	width:220px;
+	height:60px;
+}
+
 .darkcontainer {
 	height:12px;
 	margin-bottom:8px;
