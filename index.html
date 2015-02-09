@@ -84,28 +84,32 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="span">
-      <h2>Aktuelles</h2>
-        {% for post in site.posts limit: 8 %}
-          {% assign loopindex = forloop.index | modulo: 4 %}
-          {% if loopindex == 0 %}
-            <div class="grid-last">
-          {% else %}
-            <div class="grid">
-          {% endif %}
-              <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
-                  title="{{ post.title }}" />
-              </a><br />
+        <h2><a name="aktuelles"></a>Aktuelles</h2>
+        {% assign loopindex = 0 %}
+        {% for post in site.posts %}
+        {% if loopindex < site.amountofnews %} {% unless post.isarchive %}
+            {% assign loopindex=loopindex | plus:1 %}
+            {% assign testli=loopindex | modulo:4 %}
+            {% if testli == 0 %}
+              <div class="grid-last">
+            {% else %}
+              <div class="grid">
+            {% endif %}
+                <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
+                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                    title="{{ post.title }}" />
+                </a><br />
 
-              <div class="desc">
-                {% if post.remote %}
-                {{post.content}}
-                {% else %}
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
-                {%endif%}
-              </div>
-            </div> <!-- END grid/grid-last -->
-            {% if loopindex == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
+                <div class="desc">
+                  {% if post.remote %}
+                  {{post.content}}
+                  {% else %}
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+                  {%endif%}
+                </div>
+              </div> <!-- END grid/grid-last -->
+              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
+              {% endunless %}{% endif %}
         {% endfor %}
       </div><!-- END span -->
     </div><!-- END row -->
@@ -153,7 +157,7 @@ layout: default
         <h2><a name="archiv"></a>Archiv</h2>
         {% assign loopindex = 0 %}
         {% for post in site.posts %}
-        {% if post.isarchive and loopindex < 16 %}
+        {% if post.isarchive and loopindex < site.amountofarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             {% if testli == 0 %}

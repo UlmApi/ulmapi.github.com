@@ -12,3 +12,7 @@ github_username:  ulmapi
 
 # Build settings
 markdown: kramdown
+
+# custom vars
+amountofnews: 8
+amountofarchive: 16
