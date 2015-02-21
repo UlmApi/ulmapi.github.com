@@ -1,0 +1,101 @@
+body{
+	background: #999;
+}
+
+h2 {
+	margin-bottom:8px;
+}
+
+.hero-unit{
+	background: #FFF;
+	text-align:center;
+}
+
+.container{
+	background: #FFF;
+	padding:0px;
+}
+
+.darker {
+	background: #666;
+	color: #EEE;
+	border-left: 10px #666;
+}
+
+li{
+	color:#404040;
+}
+
+.box{margin-left:auto;margin-right:auto;zoom:1;;background-color:#fff;height:100%; min-height:100%;box-shadow: 0px 4px 4px 4px #333;}
+.box:before,.box:after{display:table;content:"";zoom:1}
+
+.darkcontainer{margin-left:auto;margin-right:auto;zoom:1;;background-color:#CCC; text-align:center;margin-top:10px;margin-bottom:15px;}
+.darkcontainer:before,.darkcontainer:after{display:table;content:"";zoom:1}
+
+
+
+.container h1{
+	font-family: 'Open Sans', sans-serif;
+	font-variant:small-caps;
+	color:#333;
+	font-size:3em;
+	/* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 10px #999; */
+	padding:5px;
+	margin-top: 6px;
+}
+
+.date {
+	text-align:center;
+}
+
+.grid {
+	float:left; 
+	margin-right:11px;
+}
+
+.grid-last {
+	float:left; 
+}
+
+.grid img, .grid-last img {
+	border:1px solid #000;
+}
+
+.grid img:hover, .grid-last img:hover {
+	border:1px solid #0069D6;
+}
+
+.grid .desc, .grid-last .desc {
+	margin-bottom: 4px;
+	width:220px;
+	height:40px;
+}
+
+.grid .desc-large, .grid-last .desc-large {
+	margin-bottom: 4px;
+	width:220px;
+	height:60px;
+}
+
+.darkcontainer {
+	height:12px;
+	margin-bottom:4px;
+	margin-top:4px;
+}
+
+.grid-separator {
+	clear:both;
+	height:25px;
+}
+
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+.icon > svg path {
+  fill: #828282; }
