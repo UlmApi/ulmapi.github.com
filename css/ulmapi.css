@@ -79,8 +79,8 @@ li{
 
 .darkcontainer {
 	height:12px;
-	margin-bottom:8px;
-	margin-top:18px;
+	margin-bottom:4px;
+	margin-top:4px;
 }
 
 .grid-separator {
@@ -97,5 +97,5 @@ li{
   width: 16px;
   height: 16px;
   vertical-align: middle; }
-  .icon > svg path {
-    fill: #828282; }
+.icon > svg path {
+  fill: #828282; }

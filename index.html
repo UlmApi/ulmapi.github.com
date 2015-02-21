@@ -7,7 +7,7 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <h2>Was ist das hier?</h2>
           Wir sind eine Gruppe von Open-Data-Interessierten aus Ulm.
           Unser Ziel ist es, gemeinsam diverse Datensätze unter offener Lizenz zu erhalten,
@@ -25,7 +25,7 @@ layout: default
             Facebook</a> gerne liken, um immer über Aktuelles informiert zu bleiben.
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <h2>Wer steckt dahinter?</h2>
 
         <p>Für die wissenschaftliche und praktische Bearbeitung des Themas "Open Data"
@@ -40,7 +40,7 @@ layout: default
           Treffen vorbeischauen!
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <h2>Wie kann ich mitmachen?</h2>
 
         <ul>
@@ -79,19 +79,14 @@ layout: default
 
   <div class="darkcontainer"></div>
   <div class="container">
-    <div class="row-same-height">
-      <div class="span">
+    <div class="row-same-height row-centered">
         <h2><a name="aktuelles"></a>Aktuelles</h2>
         {% assign loopindex = 0 %}
         {% for post in site.posts %}
         {% if loopindex < site.amountofnews %} {% unless post.isarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            {% if testli == 0 %}
-              <div class="col-md-3">
-            {% else %}
-              <div class="col-md-3">
-            {% endif %}
+              <div class="col-lg-3 col-centered" style="max-width:300px">
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
                   <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
@@ -105,30 +100,24 @@ layout: default
                   {%endif%}
                 </div>
               </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row-same-height"><div class="span"> {% endif %}
+              {% if testli == 0 %} </div><div class="grid-separator"></div><div class="row-same-height">{% endif %}
               {% endunless %}{% endif %}
         {% endfor %}
-      </div><!-- END span -->
     </div><!-- END row -->
   </div><!-- END Container -->
 
   <div class="darkcontainer" style="height:12px;"></div>
   <div class="container">
     <div class="row-same-height">
-      <div class="span">
       <h2><a name="projekte"></a>Projekte</h2>
         {% assign loopindex = 0 %}
         {% for post in site.posts %}
           {% if post.categories contains "project" %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            {% if testli == 0 %}
-              <div class="col-md-3">
-            {% else %}
-              <div class="col-md-3">
-            {% endif %}
+              <div class="col-lg-3" style="max-width:300px">
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
 
@@ -140,7 +129,7 @@ layout: default
                 {%endif%}
               </div>
               </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row-same-height"><div class="span"> {% endif %}
+              {% if testli == 0 %} </div><div class="grid-separator"></div><div class="row-same-height"> {% endif %}
           {% endif %}
         {% endfor %}
       </div><!-- END span -->
@@ -150,20 +139,15 @@ layout: default
   <div class="darkcontainer" style="height:12px;"></div>
   <div class="container">
     <div class="row-same-height">
-      <div class="span">
         <h2><a name="archiv"></a><a href="/archive/">Archiv</a></h2>
         {% assign loopindex = 0 %}
         {% for post in site.posts %}
         {% if post.isarchive and loopindex < site.amountofarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            {% if testli == 0 %}
-              <div class="col-md-3">
-            {% else %}
-              <div class="col-md-3">
-            {% endif %}
+              <div class="col-lg-3" style="max-width:300px">
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
 
@@ -175,10 +159,9 @@ layout: default
                 {%endif%}
               </div>
               </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row-same-height"><div class="span"> {% endif %}
+              {% if testli == 0 %} </div><div class="grid-separator"></div><div class="row-same-height">{% endif %}
           {% endif %}
         {% endfor %}
-      </div><!-- END span -->
     </div><!-- END row -->
   </div><!-- END Container -->
 
