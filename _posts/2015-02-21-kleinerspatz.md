@@ -4,6 +4,7 @@ categories: project
 date: 2015-02-21 13:00:00
 title: "Projekt: Kleinerspatz"
 img: "/images/projects/kleinerspatz.png" 
+imglarge: "/images/projects/large/kleinerspatz-large.png"
 imgalt: "Kleinerspatz Karte"
 ---
 
