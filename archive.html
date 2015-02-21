@@ -4,37 +4,29 @@ title: Archiv
 permalink: /archive/
 ---
 
-<div class="home">
   <div class="darkcontainer" style="height:12px;"></div>
   <div class="container">
-    <div class="row">
-      <div class="span">
-        {% assign loopindex = 0 %}
-        {% for post in site.posts %}
-            {% assign loopindex=loopindex | plus:1 %}
-            {% assign testli=loopindex | modulo:4 %}
-            {% if testli == 0 %}
-              <div class="grid-last">
-            {% else %}
-              <div class="grid">
-            {% endif %}
-                <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
-                    title="{{ post.title }}" />
-                </a><br />
+    <div class="row-same-height">
+      <h2><a name="archiv"></a><a href="/archive/">Archiv</a></h2>
+      {% assign loopindex = 0 %}
+      {% for post in site.posts %}
+          {% assign loopindex=loopindex | plus:1 %}
+          {% assign testli=loopindex | modulo:4 %}
+            <div class="col-lg-3" style="max-width:300px">
+              <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
+                <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  title="{{ post.title }}" />
+              </a><br />
 
-                <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
-                {% if post.remote %}
-                {{post.content}}
-                {% else %}
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
-                {%endif%}
-              </div>
-              </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
-        {% endfor %}
-      </div><!-- END span -->
+            <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
+              {% if post.remote %}
+              {{post.content}}
+              {% else %}
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+              {%endif%}
+            </div>
+            </div> <!-- END grid/grid-last -->
+            {% if testli == 0 %} </div><div class="grid-separator"></div><div class="row-same-height">{% endif %}
+      {% endfor %}
     </div><!-- END row -->
   </div><!-- END Container -->
-
-</div>
