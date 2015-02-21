@@ -12,9 +12,9 @@ permalink: /archive/
       {% for post in site.posts %}
           {% assign loopindex=loopindex | plus:1 %}
           {% assign testli=loopindex | modulo:4 %}
-            <div class="col-lg-3" style="max-width:300px">
+            <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:300px;">
               <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                   title="{{ post.title }}" />
               </a><br />
 
