@@ -1,6 +1,6 @@
 ---
 layout: post
-img: "images/ulmapi.png"
+img: "/images/ulmapi.png"
 imgalt: "UlmAPI Logo"
 title:  "Neue Webseite!"
 date:   2015-02-21 12:41:50
