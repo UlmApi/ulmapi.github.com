@@ -7,9 +7,8 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="span-one-third">
+      <div class="col-md-4">
         <h2>Was ist das hier?</h2>
-        <p><a href="#aktuelles">test</a>
           Wir sind eine Gruppe von Open-Data-Interessierten aus Ulm.
           Unser Ziel ist es, gemeinsam diverse Datensätze unter offener Lizenz zu erhalten,
           anschließend per <a href="https://de.wikipedia.org/wiki/Programmierschnittstelle">API</a>
@@ -26,7 +25,7 @@ layout: default
             Facebook</a> gerne liken, um immer über Aktuelles informiert zu bleiben.
         </ul>
       </div>
-      <div class="span-one-third">
+      <div class="col-md-4">
         <h2>Wer steckt dahinter?</h2>
 
         <p>Für die wissenschaftliche und praktische Bearbeitung des Themas "Open Data"
@@ -41,7 +40,7 @@ layout: default
           Treffen vorbeischauen!
         </p>
       </div>
-      <div class="span-one-third">
+      <div class="col-md-4">
         <h2>Wie kann ich mitmachen?</h2>
 
         <ul>
@@ -68,7 +67,7 @@ layout: default
             <div style="text-align:center;background:#CCCCCC;padding-bottom:1px;padding-top:4px;">
               <h4>N&auml;chstes Treffen</h4>
               <p>
-                Dienstag, 10. Februar 2015 / 19:00 Uhr<br />
+                Montag, 23. Februar 2015 / 18:00 Uhr<br />
                 <a href="http://www.uni-ulm.de/in/vs/anfahrt.html">Universität Ulm, O27/341</a>
 
               </p>
@@ -82,7 +81,7 @@ layout: default
 
   <div class="darkcontainer" style="height:12px;"></div>
   <div class="container">
-    <div class="row">
+    <div class="row-same-height">
       <div class="span">
         <h2><a name="aktuelles"></a>Aktuelles</h2>
         {% assign loopindex = 0 %}
@@ -91,12 +90,12 @@ layout: default
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             {% if testli == 0 %}
-              <div class="grid-last">
+              <div class="col-md-3">
             {% else %}
-              <div class="grid">
+              <div class="col-md-3">
             {% endif %}
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
 
@@ -108,7 +107,7 @@ layout: default
                   {%endif%}
                 </div>
               </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
+              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row-same-height"><div class="span"> {% endif %}
               {% endunless %}{% endif %}
         {% endfor %}
       </div><!-- END span -->
@@ -117,7 +116,7 @@ layout: default
 
   <div class="darkcontainer" style="height:12px;"></div>
   <div class="container">
-    <div class="row">
+    <div class="row-same-height">
       <div class="span">
       <h2><a name="projekte"></a>Projekte</h2>
         {% assign loopindex = 0 %}
@@ -126,9 +125,9 @@ layout: default
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             {% if testli == 0 %}
-              <div class="grid-last">
+              <div class="col-md-3">
             {% else %}
-              <div class="grid">
+              <div class="col-md-3">
             {% endif %}
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
@@ -143,7 +142,7 @@ layout: default
                 {%endif%}
               </div>
               </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
+              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row-same-height"><div class="span"> {% endif %}
           {% endif %}
         {% endfor %}
       </div><!-- END span -->
@@ -152,7 +151,7 @@ layout: default
 
   <div class="darkcontainer" style="height:12px;"></div>
   <div class="container">
-    <div class="row">
+    <div class="row-same-height">
       <div class="span">
         <h2><a name="archiv"></a><a href="/archive/">Archiv</a></h2>
         {% assign loopindex = 0 %}
@@ -161,9 +160,9 @@ layout: default
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             {% if testli == 0 %}
-              <div class="grid-last">
+              <div class="col-md-3">
             {% else %}
-              <div class="grid">
+              <div class="col-md-3">
             {% endif %}
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
@@ -178,7 +177,7 @@ layout: default
                 {%endif%}
               </div>
               </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row"><div class="span"> {% endif %}
+              {% if testli == 0 %} </div></div><div class="grid-separator"></div><div class="row-same-height"><div class="span"> {% endif %}
           {% endif %}
         {% endfor %}
       </div><!-- END span -->
