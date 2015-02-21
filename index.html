@@ -123,7 +123,7 @@ layout: default
       <h2><a name="projekte"></a>Projekte</h2>
         {% assign loopindex = 0 %}
         {% for post in site.posts %}
-          {% if post.categories contains "project" %}
+          {% if post.categories contains "project" %}{% unless post.isarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:300px;">
@@ -152,7 +152,7 @@ layout: default
               </div>
               </div> <!-- END grid/grid-last -->
               {% if testli == 0 %} </div><div class="grid-separator"></div><div class="row-same-height"> {% endif %}
-          {% endif %}
+              {% endunless %}{% endif %}
         {% endfor %}
       </div><!-- END span -->
     </div><!-- END row -->
