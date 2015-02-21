@@ -7,7 +7,7 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <h2>Was ist das hier?</h2>
           Wir sind eine Gruppe von Open-Data-Interessierten aus Ulm.
           Unser Ziel ist es, gemeinsam diverse Datensätze unter offener Lizenz zu erhalten,
@@ -25,7 +25,7 @@ layout: default
             Facebook</a> gerne liken, um immer über Aktuelles informiert zu bleiben.
         </ul>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <h2>Wer steckt dahinter?</h2>
 
         <p>Für die wissenschaftliche und praktische Bearbeitung des Themas "Open Data"
@@ -40,7 +40,7 @@ layout: default
           Treffen vorbeischauen!
         </p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <h2>Wie kann ich mitmachen?</h2>
 
         <ul>
@@ -86,9 +86,9 @@ layout: default
         {% if loopindex < site.amountofnews %} {% unless post.isarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-              <div class="col-lg-3 col-centered" style="max-width:300px">
+              <div class="col-md-3" style="max-width:250px"
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                  <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
 
@@ -115,9 +115,9 @@ layout: default
           {% if post.categories contains "project" %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-              <div class="col-lg-3" style="max-width:300px">
+              <div class="col-md-3" style="max-width:250px">
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                  <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
 
@@ -145,9 +145,9 @@ layout: default
         {% if post.isarchive and loopindex < site.amountofarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-              <div class="col-lg-3" style="max-width:300px">
+              <div class="col-md-3" style="max-width:250px">
                 <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
-                  <img width="250px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
+                  <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
 
