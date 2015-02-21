@@ -87,7 +87,14 @@ layout: default
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:275px;">
-                <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
+              {% if post.remote %}
+                {% if post.remote == "noremote" %}
+                {% else %}
+                <a href="{{ post.remote }}">
+                {% endif %}
+              {% else %}
+                <a href="{{ post.url | prepend: site.baseurl }}">
+              {% endif %}
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
@@ -116,7 +123,14 @@ layout: default
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:275px;">
-                <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
+              {% if post.remote %}
+                {% if post.remote == "noremote" %}
+                {% else %}
+                <a href="{{ post.remote }}">
+                {% endif %}
+              {% else %}
+                <a href="{{ post.url | prepend: site.baseurl }}">
+              {% endif %}
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
@@ -146,7 +160,14 @@ layout: default
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
             <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:275px;">
-                <a href="{% if post.remote %}{{ post.remote }} {% else %} {{ post.url | prepend: site.baseurl }} {% endif %}">
+              {% if post.remote %}
+                {% if post.remote == "noremote" %}
+                {% else %}
+                <a href="{{ post.remote }}">
+                {% endif %}
+              {% else %}
+                <a href="{{ post.url | prepend: site.baseurl }}">
+              {% endif %}
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a><br />
