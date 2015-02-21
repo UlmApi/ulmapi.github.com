@@ -18,13 +18,17 @@ permalink: /archive/
                   title="{{ post.title }}" />
               </a><br />
 
-            <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
-              {% if post.remote %}
-              {{post.content}}
-              {% else %}
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
-              {%endif%}
-            </div>
+              <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
+                {% if post.remote %}
+                {{post.content}}
+                {% else %}
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a><br>
+                {% if post.nopreview %}
+                {%else%}
+                {{ post.excerpt }}
+                {%endif%}
+                {%endif%}
+              </div>
             </div> <!-- END grid/grid-last -->
             {% if testli == 0 %} </div><div class="grid-separator"></div><div class="row-same-height">{% endif %}
       {% endfor %}
