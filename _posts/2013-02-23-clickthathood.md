@@ -2,7 +2,6 @@
 layout: post
 categories: project
 date: 2013-03-23 18:00:00
-remote: "http://click-that-hood.com/ulm"
 img: "/images/projects/click-that-hood.jpg" 
 imgalt: "Click that Hood!"
 ---

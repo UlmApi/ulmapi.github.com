@@ -8,7 +8,7 @@ imglarge: "/images/projects/large/kleinerspatz-large.png"
 imgalt: "Kleinerspatz Karte"
 ---
 
-Wo in Ulm sind noch Kita-Plätze verfügbar?  
+Wo in Ulm sind noch Kita-Plätze verfügbar? 
 **Update 2015-02-21:** Daten aktualisiert.  
 [Zur Karte!](http://www.ulmapi.de/kleinerspatz)  
 

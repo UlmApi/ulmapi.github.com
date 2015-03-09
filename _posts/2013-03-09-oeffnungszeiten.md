@@ -2,7 +2,6 @@
 layout: post
 categories: project
 date: 2013-03-09 00:00:00
-remote: "http://oeffnungszeiten.ulmApi.de"
 title: "Öffnungszeiten in Ulm"
 img: "/images/projects/thumb0.jpg" 
 imgalt: "Öffnungszeiten"
