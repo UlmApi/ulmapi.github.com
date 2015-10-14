@@ -6,6 +6,7 @@ title: "Projekt: Kleinerspatz"
 img: "/images/projects/kleinerspatz.png" 
 imglarge: "/images/projects/large/kleinerspatz-large.png"
 imgalt: "Kleinerspatz Karte"
+imglink: http://www.ulmapi.de/kleinerspatz
 ---
 
 Wo in Ulm sind noch Kita-Plätze verfügbar? 
