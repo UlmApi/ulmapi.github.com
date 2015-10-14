@@ -4,6 +4,7 @@ categories: project
 date: 2013-03-23 18:00:00
 img: "/images/projects/click-that-hood.jpg" 
 imgalt: "Click that Hood!"
+imglink: http://click-that-hood.com/ulm
 ---
 
 _Click that 'hood_ ist ein Ratespiel für Stadtviertel in Ulm.  

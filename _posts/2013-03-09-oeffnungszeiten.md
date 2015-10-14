@@ -5,6 +5,7 @@ date: 2013-03-09 00:00:00
 title: "Öffnungszeiten in Ulm"
 img: "/images/projects/thumb0.jpg" 
 imgalt: "Öffnungszeiten"
+imglink: http://oeffnungszeiten.ulmApi.de
 isarchive: "yes"
 largedesc: true
 ---

@@ -6,6 +6,7 @@ title: "Redeploy: Access Map"
 img: "/images/projects/access-map.png" 
 imglarge: "/images/projects/large/access-map-large.png"
 imgalt: "Access Map Ulm"
+imglink: http://www.ulmapi.de/access_map
 ---
 
 A visualization of the Ulm public transport map with and without accessible stations.  
