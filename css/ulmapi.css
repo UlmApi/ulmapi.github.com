@@ -1,19 +1,32 @@
 body{
-	background: #999;
+  background: #ddd;
+	font-family: "Fira Sans", Helvetica, sans-serif;
+}
+
+.site-nav{
+	padding: 10px 0px;
 }
 
 h2 {
-	margin-bottom:8px;
+    margin-bottom: 30px;
+}
+
+h1 {
+	word-break: break-all;
+}
+
+.wrapper {
+	padding-top: 15px;
 }
 
 .hero-unit{
-	background: #FFF;
-	text-align:center;
+    background: #FFF;
+    text-align:center;
 }
 
 .container{
-	background: #FFF;
-	padding:0px;
+  background: #FFF;
+  padding: 20px;
 }
 
 .darker {
@@ -26,10 +39,30 @@ li{
 	color:#404040;
 }
 
-.box{margin-left:auto;margin-right:auto;zoom:1;;background-color:#fff;height:100%; min-height:100%;box-shadow: 0px 4px 4px 4px #333;}
-.box:before,.box:after{display:table;content:"";zoom:1}
+.box{
+	margin-left:auto;
+	margin-right:auto;zoom:1;;
+	background-color:#fff;
+	height:100%; 
+	min-height:100%;
+	box-shadow: 0px 3px 4px 2px #888;
+}
 
-.darkcontainer{margin-left:auto;margin-right:auto;zoom:1;;background-color:#CCC; text-align:center;margin-top:10px;margin-bottom:15px;}
+.box:before,.box:after{
+	display:table;
+	content:"";zoom:1
+}
+
+.darkcontainer{
+	margin-left:auto;
+	margin-right:auto;zoom:1;
+	margin-bottom:20px;
+	margin-top:20px;;
+	background-color: #ddd;
+	text-align:center;
+	height:28px;
+}
+
 .darkcontainer:before,.darkcontainer:after{display:table;content:"";zoom:1}
 
 
@@ -42,10 +75,24 @@ li{
 	/* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 10px #999; */
 	padding:5px;
 	margin-top: 6px;
+	word-wrap: wrap-all;
+}
+
+.row {
+	padding: 0px 0px;
 }
 
 .date {
 	text-align:center;
+}
+
+.next-meeting {
+	text-align: center;
+  background: #eee none repeat scroll 0% 0%;
+  padding-bottom: 1px;
+  padding-top: 4px;
+	border-radius: 2px;
+	margin-top: 20px;
 }
 
 .grid {
@@ -77,17 +124,14 @@ li{
 	height:60px;
 }
 
-.darkcontainer {
-	height:12px;
-	margin-bottom:4px;
-	margin-top:4px;
-}
-
 .grid-separator {
 	clear:both;
 	height:25px;
 }
 
+footer>p{
+	margin: 15px;
+}
 
 /**
  * Icons
@@ -99,3 +143,9 @@ li{
   vertical-align: middle; }
 .icon > svg path {
   fill: #828282; }
+
+@media(min-width: 770px) {
+	.header-image{
+	  float: left;
+  }
+}

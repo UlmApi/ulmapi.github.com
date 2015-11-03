@@ -11,8 +11,12 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Fira+Sans:400,500" rel="style" type="text/css" />
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/ulmapi.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/ulmapi.png" | prepend: site.baseurl  }}">
+
+  <link rel="apple-touch-icon-precomposed" href="{{ "/images/ulmapi.png" | prepend: site.baseurl  }}">
 </head>
