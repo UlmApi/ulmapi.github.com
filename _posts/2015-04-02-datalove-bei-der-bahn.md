@@ -3,7 +3,8 @@ layout: post
 categories: news
 date: 2015-04-02 13:30:00
 title: "datalove bei der Bahn"
-img: "/images/news/db_challenge.png" 
+img: "/images/news/db_challenge.png"
+imglarge: "/images/news/large/db_challenge.png"
 imgalt: "Falco bei der DB Challenge"
 ---
 

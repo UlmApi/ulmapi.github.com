@@ -3,7 +3,8 @@ layout: post
 categories: news
 date: 2015-06-14 18:12:00
 title: "Jugend hackt bei uns in Ulm"
-img: "/images/news/jugendhackt.jpg" 
+img: "/images/news/jugendhackt.jpg"
+imglarge: "/images/news/large/jugendhackt.jpg"
 imgalt: "Gemütliches Setting für ein Brainstorming an der Uni Ulm"
 ---
 
