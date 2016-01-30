@@ -1,7 +1,7 @@
 ---
 layout: post                               #leave this be
 categories: project                        #leave this be
-date: date goes here                       #format: 2015-02-21 13:00:00
+date: 1970-01-01 01:23:45                      #format: 2015-02-21 13:00:00
 title: "Project: my cool project"          #short title (used for post links, URLs, etc)
 img: "/images/projects/img.png"            #small image (220x150)
 imglarge: "/images/projects/large/img.png" #large image (scaled down to column width on project page)
