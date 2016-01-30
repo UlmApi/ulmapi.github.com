@@ -53,7 +53,7 @@ Im **November** beschäftigten wir uns mit einem _ganz_ anderen Thema. Auch in U
 
 ![Perfekter Jahresausklang im Kreis der Open-Knowledge-Familie auf dem 32c3!](/images/news/2016-01/20151230_32c3.jpg)
 
-Im **Dezember** war dann Erholung und Endspurt von diesem inhaltsreichen Jahr angesagt – mit einem Abstecher zum 3. DB-Hackathon nach Berlin, einem gemeinsam mit der Ulmer Stadtverwaltung verfassten Artikel in _Kommune 21_, und schließlich einem sehr schönen Jahresausklang mit vielen Freund\_innen und Kompliz\_innen auf dem 32c3 in Berlin.
+Im **Dezember** war dann Erholung und Endspurt von diesem inhaltsreichen Jahr angesagt – mit einem Abstecher zum 3. DB-Hackathon nach Berlin, einem gemeinsam mit der Ulmer Stadtverwaltung verfassten Artikel in _Kommune 21_, und schließlich einem sehr schönen Jahresausklang mit vielen Freund\_innen und Kompliz\_innen auf dem 32c3 in <strike>Berlin</strike> [Hamburg natürlich](https://twitter.com/pajowu/status/693474254365523971).
 
 ## Was sonst noch war
 
