@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: news
+categories: project
 date: 2015-06-14 18:12:00
 title: "Jugend hackt bei uns in Ulm"
 img: "/images/news/jugendhackt.jpg"
