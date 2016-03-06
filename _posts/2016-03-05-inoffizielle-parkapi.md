@@ -8,7 +8,7 @@ imglarge: "/images/news/large/park_api.jpg"
 imgalt: "So sieht das aus"
 ---
 
-Wir hatten vergangene Woche viel Spaß mit einer undokumentierten Parkplatz-API – und den Versuchen der Herausgeber, sie zuzunageln ;)
+Wir hatten viel Spaß mit einer undokumentierten Parkplatz-API – und den Versuchen der Herausgeber, sie zuzunageln ;)
 
 Alles begann am 1. März mit einer Mail an alle Studierende, die freudig von einer neuen Parkauslastungs-App für iOS und Android erzählte, und natürlich auch [einer Web-App, auf die man hier klicken solle](http://tsu-app.rrooaarr.biz/front/). Oder so ähnlich ;)
 
