@@ -17,11 +17,13 @@ layout: default
           <div class="col-md-10 col-sm-12 col-xs-12 col-lg-10" style="">
             {% if page.imglink %}
               <a href="{{ page.imglink }}">
+            {% elsif page.imglarge %}
+              <a href="{{ page.imglarge | prepend: site.baseurl}}">
+            {% else %}
+              <a href="{{ page.img | prepend:site.baseurl }}">
             {% endif %}
                   <img class="img-responsive" src="{% if page.imglarge %} {{ page.imglarge | prepend: site.baseurl }} {% else %} {{ page.img | prepend: site.baseurl }} {% endif %}" alt="{{ page.imgalt }}" title="{{ page.title }}" />
-            {% if page.imglink %}
               </a>
-            {% endif %}
             {{ content }}
           </div>
           <div class="col-md-1" style=""></div>
