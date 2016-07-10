@@ -2,7 +2,7 @@
 layout: post
 categories: news
 date: 2016-03-05 18:29:00
-title: "Die inoffizielle Park-API für die Uni Ulm"
+title: "Inoffizielle Park-API für Uni Ulm"
 img: "/images/news/park_api.jpg"
 imglarge: "/images/news/large/park_api.jpg"
 imgalt: "So sieht das aus"
