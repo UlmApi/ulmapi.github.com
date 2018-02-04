@@ -78,14 +78,14 @@ layout: default
   <div class="darkcontainer"></div>
   <div class="container">
     <div class="row-same-height row-centered">
-        <h2><a name="aktuelles"></a>Aktuelles</h2>
+      <h2><a name="aktuelles"></a>Aktuelles</h2>
         {% assign loopindex = 0 %}
         {% for post in site.posts %}
         {% if loopindex < site.amountofnews %} {% unless post.isarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:300px;">
-                <div style="min-height:150px;">
+            <div class="item col-md-3 col-sm-6 col-xs-12">
+              <div class="item-img">
               {% if post.remote %}
                 {% if post.remote == "noremote" %}
                 {% else %}
@@ -97,23 +97,22 @@ layout: default
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                   title="{{ post.title }}" />
                 </a>
-                  </div>
-                <br>
+              </div>
 
-                <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
-                  {% if post.remote %}
-                  {{post.content}}
-                  {% else %}
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a><br>
-                  {% if post.nopreview %}
-                  {%else%}
-                  {{ post.excerpt }}
-                  {%endif%}
-                  {%endif%}
-                </div>
-              </div> <!-- END grid/grid-last -->
-              {% if testli == 0 %} {% endif %}
-              {% endunless %}{% endif %}
+              <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
+                {% if post.remote %}
+                {{post.content}}
+                {% else %}
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a><br>
+                {% if post.nopreview %}
+                {%else%}
+                {{ post.excerpt }}
+                {%endif%}
+                {%endif%}
+              </div>
+            </div> <!-- END grid/grid-last -->
+            {% if testli == 0 %} {% endif %}
+            {% endunless %}{% endif %}
         {% endfor %}
     </div><!-- END row -->
   </div><!-- END Container -->
@@ -127,8 +126,8 @@ layout: default
           {% if post.categories contains "project" %}{% unless post.isarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:300px;">
-                <div style="min-height:150px;">
+            <div class="item col-md-3 col-sm-6 col-xs-12">
+                <div class="item-img">
               {% if post.remote %}
                 {% if post.remote == "noremote" %}
                 {% else %}
@@ -140,7 +139,7 @@ layout: default
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a>
-        </div><br />
+        </div>
 
               <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
                 {% if post.remote %}
@@ -170,8 +169,8 @@ layout: default
         {% if post.isarchive and loopindex < site.amountofarchive %}
             {% assign loopindex=loopindex | plus:1 %}
             {% assign testli=loopindex | modulo:4 %}
-            <div class="col-md-3 col-sm-6 col-xs-12" style="max-width:250px;min-height:300px;">
-                <div style="min-height:150px;">
+            <div class="item col-md-3 col-sm-6 col-xs-12">
+                <div class="item-img">
               {% if post.remote %}
                 {% if post.remote == "noremote" %}
                 {% else %}
@@ -183,7 +182,7 @@ layout: default
                   <img width="220px" src="{{ post.img | prepend: site.baseurl }}" alt="{{ post.imgalt }}"
                     title="{{ post.title }}" />
                 </a>
-        </div><br />
+        </div>
 
               <div class="desc{% if post.largedesc %}{{"-large"}}{% endif %}">
                 {% if post.remote %}

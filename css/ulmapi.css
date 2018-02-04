@@ -1,136 +1,150 @@
-body{
+body {
   background: #ddd;
-	font-family: "Fira Sans", Helvetica, sans-serif;
+  font-family: "Fira Sans", Helvetica, sans-serif;
 }
 
-.site-nav{
-	padding: 10px 0px;
+.site-nav {
+  padding: 10px 0px;
 }
 
 h2 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 h1 {
-	word-break: break-all;
+  word-break: break-all;
 }
 
 .wrapper {
-	padding-top: 15px;
+  padding-top: 15px;
 }
 
-.hero-unit{
-    background: #FFF;
-    text-align:center;
+.hero-unit {
+  background: #FFF;
+  text-align:center;
 }
 
-.container{
+.container {
   background: #FFF;
   padding: 20px;
 }
 
 .darker {
-	background: #666;
-	color: #EEE;
-	border-left: 10px #666;
+  background: #666;
+  color: #EEE;
+  border-left: 10px #666;
 }
 
-li{
-	color:#404040;
+li {
+  color: #404040;
 }
 
-.box{
-	margin-left:auto;
-	margin-right:auto;zoom:1;;
-	background-color:#fff;
-	height:100%; 
-	min-height:100%;
-	box-shadow: 0px 3px 4px 2px #888;
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+  background-color: #fff;
+  height: 100%;
+  min-height: 100%;
+  box-shadow: 0px 3px 4px 2px #888;
 }
 
-.box:before,.box:after{
-	display:table;
-	content:"";zoom:1
+.box:before,.box:after {
+  display: table;
+  content: "";
+  zoom: 1;
 }
 
-.darkcontainer{
-	margin-left:auto;
-	margin-right:auto;zoom:1;
-	margin-bottom:20px;
-	margin-top:20px;;
-	background-color: #ddd;
-	text-align:center;
-	height:28px;
+.darkcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+  margin-bottom: 20px;
+  margin-top: 20px;;
+  background-color: #ddd;
+  text-align: center;
+  height: 28px;
 }
 
-.darkcontainer:before,.darkcontainer:after{display:table;content:"";zoom:1}
+.darkcontainer:before,.darkcontainer:after {
+  display:table;
+  content:"";
+  zoom:1;
+}
 
-
-
-.container h1{
-	font-family: 'Open Sans', sans-serif;
-	font-variant:small-caps;
-	color:#333;
-	font-size:3em;
-	/* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 10px #999; */
-	padding:5px;
-	margin-top: 6px;
-	word-wrap: wrap-all;
+.container h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-variant: small-caps;
+  color: #333;
+  font-size: 3em;
+  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 10px #999; */
+  padding: 5px;
+  margin-top: 6px;
+  word-wrap: wrap-all;
 }
 
 .row {
-	padding: 0px 0px;
+  padding: 0px 0px;
 }
 
 .date {
-	text-align:center;
+  text-align: center;
 }
 
 .next-meeting {
-	text-align: center;
+  text-align: center;
   background: #eee none repeat scroll 0% 0%;
   padding-bottom: 1px;
   padding-top: 4px;
-	border-radius: 2px;
-	margin-top: 20px;
+  border-radius: 2px;
+  margin-top: 20px;
 }
 
 .grid {
-	float:left; 
-	margin-right:11px;
+  float: left;
+  margin-right: 11px;
 }
 
 .grid-last {
-	float:left; 
+  float: left;
 }
 
 .grid img, .grid-last img {
-	border:1px solid #000;
+  border: 1px solid #000;
 }
 
 .grid img:hover, .grid-last img:hover {
-	border:1px solid #0069D6;
+  border: 1px solid #0069D6;
 }
 
 .grid .desc, .grid-last .desc {
-	margin-bottom: 4px;
-	width:220px;
-	height:40px;
+  margin-bottom: 4px;
+  width: 220px;
+  height: 40px;
 }
 
 .grid .desc-large, .grid-last .desc-large {
-	margin-bottom: 4px;
-	width:220px;
-	height:60px;
+  margin-bottom: 4px;
+  width: 220px;
+  height: 60px;
 }
 
 .grid-separator {
-	clear:both;
-	height:25px;
+  clear: both;
+  height: 25px;
 }
 
-footer>p{
-	margin: 15px;
+.item {
+  min-height: 350px;
+}
+
+.item-img {
+  min-height: 150px;
+  text-align: center;
+}
+
+footer>p {
+  margin: 15px;
 }
 
 /**
@@ -138,19 +152,19 @@ footer>p{
  */
 
 img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    max-height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  max-height: 400px;
 }
 
 .img-responsive {
-    max-height: 400px;
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  max-height: 400px;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /**
@@ -160,12 +174,21 @@ img {
   display: inline-block;
   width: 16px;
   height: 16px;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
+
 .icon > svg path {
-  fill: #828282; }
+  fill: #828282;
+}
 
 @media(min-width: 770px) {
-	.header-image{
-	  float: left;
+  .header-image {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .item {
+    max-width: initial;
   }
 }
